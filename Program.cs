@@ -1,2 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿class main
+{
+    static void Main(string[] args)
+    {
+        HaloGeneric a = new HaloGeneric();
+        a.sapaUser<string>("Nicho");
+    }
+}
+
+class HaloGeneric()
+{
+    public void sapaUser<T>(T user)
+    {
+        Console.WriteLine($"Halo User {user}");
+    }
+}

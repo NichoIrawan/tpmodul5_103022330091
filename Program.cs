@@ -2,8 +2,10 @@
 {
     static void Main(string[] args)
     {
-        DataGeneric<string> a = new DataGeneric<string>("103022330091");
-        a.printData();
+        HaloGeneric a = new HaloGeneric();
+        a.sapaUser<string>("Nicho");
+        DataGeneric<string> b = new DataGeneric<string>("103022330091");
+        b.printData();
     }
 }
 
@@ -19,5 +21,13 @@ class DataGeneric<T>
     public void printData()
     {
         Console.WriteLine($"Data yang tersimpan adalah: {data}");
+    }
+}
+
+class HaloGeneric()
+{
+    public void sapaUser<T>(T user)
+    {
+        Console.WriteLine($"Halo User {user}");
     }
 }
